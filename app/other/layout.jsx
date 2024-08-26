@@ -1,12 +1,9 @@
+export const metadata = {
+  title: 'Dune - Personajes',
+  description:
+    'Una pagina web de estudio de Next JS con la tematica de la saga de Dune de Frank Herbert',
+  keywords: 'landingPage, Dune, nextJS',
+};
 export default function OtherLayout({ children }) {
-  return (
-    <div>
-      <ul>
-        <li>Planetas</li>
-        <li>Transporte</li>
-        <li>Casas gobernantes</li>
-      </ul>
-      {children}
-    </div>
-  );
+  return <div>{children}</div>;
 }
