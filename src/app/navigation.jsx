@@ -1,10 +1,13 @@
 import Link from "next/link";
 import React from "react";
+import "./styles/navBar.css";
 
 export default function NavBar() {
   return (
-    <nav>
-      <h1>Navegacion</h1>
+    <nav className="navBar py-5 fixed">
+      <Link href="/">
+        <h1 className="text-4xl font-black">NEXT</h1>
+      </Link>
 
       <ul>
         <li>
@@ -17,7 +20,7 @@ export default function NavBar() {
           <Link href="/personajes">Personajes</Link>
         </li>
         <li>
-          <Link href="/other">Otros</Link>
+          <Link href="/posts">Otros</Link>
         </li>
       </ul>
     </nav>
